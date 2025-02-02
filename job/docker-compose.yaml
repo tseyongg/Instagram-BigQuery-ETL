@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  collector:
+    build: .
+    environment:
+      - INSTAGRAM_ACCOUNT_ID=${INSTAGRAM_ACCOUNT_ID}
+      - INSTAGRAM_ACCESS_TOKEN=${INSTAGRAM_ACCESS_TOKEN}
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/key.json
+    volumes:
+      - ${GOOGLE_CREDENTIALS_PATH}:/app/key.json:ro

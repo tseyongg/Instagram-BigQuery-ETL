@@ -13,4 +13,5 @@ Detailed setup instructions are available in the docs folder:
 - [Cloud Composer Setup](docs/cloud-composer-setup.md)
 - [Environment Variables](docs/environment-variables.md)
 - [Authentication & Permissions](docs/authentication.md)
-- [Local Development](docs/local-development.md)
+- [Airflow Email Task Configuration](docs/airflow-email-task-config.md)
+- [Local & Cloud Development](docs/local-development.md)

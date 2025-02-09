@@ -1,9 +1,14 @@
-# Instagram Data Pipeline
+# Instagram ETL Pipeline
+Data Pipeline for SISTIC Singapore, extracting data from Instagram API, transformed on Google Cloud Run, and finally loaded into Google BigQuery. 
 
 ## Motivation
-This project...
+This project was conceptualized to allow for easy analysis of SISTIC Singapore's Instagram posts, comments, and post insights.
+
+It incorporates the developing of skills in the areas of API manipulation, Cloud technologies, and Orchestration tools.
 
 ## Architecture
+
+![]()
 
 ## Output
 

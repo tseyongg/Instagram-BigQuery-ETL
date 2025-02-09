@@ -30,7 +30,15 @@ Due to the distributed nature of compute and scheduling on the cloud, I opted to
 
 To test my job locally, I utilized my own [docker-compose.yaml](job/docker-compose.yaml) file, although this was not required on eventual cloud deployment. In it, the **environment variables** `INSTAGRAM_ACCOUNT_ID`, `INSTAGRAM_ACCESS_TOKEN` and Google Service Account Key are not shown in this directory due to their sensitive nature.
 
-Detailed setup instructions are available in the docs folder:
+Locally, with the full directory and account key, only one command is required, after navigation to the terminal:
+
+```bash
+docker compose up
+```
+
+## Additional Setup and Workflow
+
+Detailed setup and workflow instructions are available in the docs folder:
 - [Instagram API Setup](docs/instagram-api-setup.md)
 - [Cloud Composer Setup](docs/cloud-composer-setup.md)
 - [Environment Variables](docs/environment-variables.md)

@@ -25,6 +25,11 @@ Above is the output - three tables under the instagram_analytics dataset:
 * Comments (PK: comment_id)
 
 ## Setup
+
+Due to the distributed nature of compute and scheduling on the cloud, I opted to develop to contanerize solely my Cloud Run job rather than containerizing an entire Airflow instance and volume mounting my scripts. However, the option to do is available with [the official Airflow docker-compose.yaml](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) file.
+
+To test my job locally, I utilized my own [docker-compose.yaml](job/docker-compose.yaml) file, although this was not required on eventual cloud deployment. In it, the **environment variables** `INSTAGRAM_ACCOUNT_ID`, `INSTAGRAM_ACCESS_TOKEN` and Google Service Account Key are not shown in this directory due to their sensitive nature.
+
 Detailed setup instructions are available in the docs folder:
 - [Instagram API Setup](docs/instagram-api-setup.md)
 - [Cloud Composer Setup](docs/cloud-composer-setup.md)

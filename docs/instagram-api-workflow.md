@@ -4,6 +4,8 @@ Here, I lay out some the fields obtained for each post, comment and insight. I a
 
 > NOTE: Each post has only 1 insight. However, each post can have 0, 1, or multiple comments. This job also **does not** collect replies to comments, which has a [separate endpoint and syntax altogether](https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-comment/replies/).
 
+***
+
 `posts`
 
 | **field**          | **description**                     | 
@@ -42,6 +44,8 @@ Here, I lay out some the fields obtained for each post, comment and insight. I a
 | plays                   | no. of times vid plays                  | new `VIDEO` only                  |
 | ig_reels_avg_watch_time | avg time spent playing the video        | new `VIDEO` only                  |
 | insight_collected_at*   | time our job retrieves the insight      | all                               |
+
+***
 
 ### Handling Video Insights Fallbacks
 

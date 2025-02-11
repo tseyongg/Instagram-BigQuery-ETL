@@ -23,7 +23,7 @@ gcloud config set project PROJECT_ID
 
 ### Obtaining a key
 
-This step is for local deployment before our cloud deployment. Here, we do not require the gcloud CLI, unless you wish to obtain a service account key from the CLI (you may opt to do it from the console instead). This service account key is needed for our local job to load the data into our BigQuery tables.
+This step is for local deployment before our cloud deployment. Here, we do not require the gcloud CLI, unless you wish to obtain a service account key from the CLI (you may opt to do it from the console instead). This service account key is [needed](https://cloud.google.com/docs/authentication/application-default-credentials#GAC) for our local job to load the data into our BigQuery tables.
 
 obtain key via CLI:
 

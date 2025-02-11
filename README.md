@@ -41,6 +41,8 @@ docker compose up
 Detailed setup and workflow instructions are available in the docs folder:
 - [Instagram API Setup](docs/instagram-api-setup.md)
 - [Instagram API Workflow](docs/instagram-api-workflow.md)
+- [Local Deployment & gcloud CLI](docs/instagram-api-workflow.md)
+- [Cloud Deployment](docs/cloud-deployment.md)
 
 <!-- - [Cloud Composer Setup](docs/cloud-composer-setup.md)
 - [Environment Variables](docs/environment-variables.md)

@@ -32,12 +32,12 @@ gcloud iam service-accounts keys create KEY_FILE \
     --iam-account=SA_NAME@PROJECT_ID.iam.gserviceaccount.com
 ```
 
-where \
+where:\
 `KEY_FILE` is the path to the downloaded key file on your machine; \
 `SA_NAME` is your service account name, while \
-`PROJECT_ID` is the ID of your project.
+`PROJECT_ID` is the ID of your project. <br><br>
 
-Finally, simply add the key file to your env. file, with the variable `GOOGLE_CREDENTIALS_PATH`. In our [`docker-compose.yaml`](/job/docker-compose.yaml), this is mounted and accessed by the container as `GOOGLE_APPLICATION_CREDENTIALS`, which the `bigquery` library uses in [`bigquery_loader.py`](/job/bigquery_loader.py).
+Finally, simply add the key file to your env. file, with the variable `GOOGLE_CREDENTIALS_PATH`. In our [`docker-compose.yaml`](/job/docker-compose.yaml), this is mounted and accessed by the container as `GOOGLE_APPLICATION_CREDENTIALS`, which the `bigquery` library uses in [`bigquery_loader.py`](/job/bigquery_loader.py).<br><br>
 
 ### Local Job Run
 

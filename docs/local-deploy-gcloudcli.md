@@ -37,6 +37,10 @@ where:\
 `SA_NAME` is your service account name, while \
 `PROJECT_ID` is the ID of your project. <br><br>
 
+Upon key creation: you should be able to see this:
+
+![service-key](/docs/images/service-key.png) <br><br>
+
 Finally, simply add the key file to your env. file, with the variable `GOOGLE_CREDENTIALS_PATH`. In our [`docker-compose.yaml`](/job/docker-compose.yaml), this is mounted and accessed by the container as `GOOGLE_APPLICATION_CREDENTIALS`, which the `bigquery` library uses in [`bigquery_loader.py`](/job/bigquery_loader.py).<br><br>
 
 ### Local Job Run
@@ -51,5 +55,10 @@ Then, simply run:
 ```bash
 docker compose up
 ```
+
+This is what you should see upon successful job run:
+
+![local-job-run-logs](/docs/images/local-job-run-logs.png)
+
 
 

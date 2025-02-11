@@ -60,7 +60,7 @@ class InstagramClient:
                 comments_data = data.get('data', [])
                 all_comments_for_post.extend(comments_data)
                 
-                # Safer way to check for next page
+                # safer way to check for next page
                 paging = data.get('paging', {})
                 next_url = paging.get('next')
                 
@@ -70,7 +70,7 @@ class InstagramClient:
                         data = await next_response.json()
                         comments_data = data.get('data', [])
                         all_comments_for_post.extend(comments_data)
-                        # Update next_url for next iteration
+                        # update next_url for next iteration
                         paging = data.get('paging', {})
                         next_url = paging.get('next')
             
@@ -94,20 +94,20 @@ class InstagramClient:
                 insights_data = data.get('data', [])
                 return self._process_insights(insights_data, post_id)
         except Exception as e:
-            raise  # Re-raise the exception to be caught by the caller
+            raise
 
     async def fetch_insights_for_post(self, post_id: str, media_type: str) -> Optional[Dict]:
         """Fetch insights for a specific post"""
         if media_type == 'VIDEO':
             try:
-                # Try new video metrics
+                # try new video metrics
                 return await self._fetch_insights_with_metrics(post_id, 'reach,shares,saved,plays,ig_reels_avg_watch_time')
             except:
                 try:
-                    # Try mid-age video metrics
+                    # try mid-age video metrics
                     return await self._fetch_insights_with_metrics(post_id, 'impressions,profile_visits,reach,shares,saved')
                 except:
-                    # For oldest videos
+                    # for oldest videos
                     metrics = 'impressions,reach,saved'
         else:
             metrics = 'impressions,profile_visits,reach,shares,saved'
@@ -178,7 +178,7 @@ class InstagramClient:
                 metric_name = metric.get('name')
                 if metric_name in insights:
                     value = metric.get('values', [{}])[0].get('value', None)
-                    # Convert milliseconds to seconds for watch time
+                    # convert milliseconds to seconds
                     if metric_name == 'ig_reels_avg_watch_time' and value is not None:
                         value = value / 1000
                     insights[metric_name] = value

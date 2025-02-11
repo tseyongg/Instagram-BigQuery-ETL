@@ -6,7 +6,7 @@ import logging
 from instagram_client import InstagramClient
 from bigquery_loader import BigQueryLoader
 
-# Configure logging
+# configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 

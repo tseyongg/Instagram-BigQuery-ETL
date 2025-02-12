@@ -24,6 +24,8 @@ In our [DAG](/airflow/dags/airflow_job.py), our second task after running the jo
 
 ## Dag Run
 
+### DAG uploading
+
 Now, proceed to upload your [DAG](/airflow/dags/airflow_job.py) into your environment's cloud storage bucket:
 
 ```bash
@@ -36,3 +38,22 @@ gcloud composer environments storage dags import \
 On completion, you should see your composer bucket update with your airflow file:
 
 ![composer-bucket](/docs/images/composer-bucket.png)
+
+And if you access your airflow webserver, you should be able to see your DAG:
+
+![job-dag](/docs/images/job-dag.png)
+
+> Note: my DAG is set to run every 6 hours from midnight, but you are free to change yours to your desire.
+
+### DAG success
+
+On success, the DAG graph execution would look as follows:
+
+![dag-graph-success](/docs/images/dag-graph-success.png) <br><br>
+
+Upon which, you will then receive an email, notifying you of success:
+
+![success-email](/docs/images/success-email.png)
+
+You may additionally also check your Cloud Run logs to view the logs of your airflow-triggered job run.
+

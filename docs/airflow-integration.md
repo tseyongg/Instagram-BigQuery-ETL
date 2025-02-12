@@ -20,6 +20,8 @@ In our [DAG](/airflow/dags/airflow_job.py), our second task after running the jo
 
 3. Finally, you will need to override the configurations in the `airflow.cfg` file. You may do so in the console or in the [command line](https://cloud.google.com/composer/docs/composer-3/override-airflow-configurations). Use the following key-value pairs:
 
+> Credits: [Stack Overflow](https://stackoverflow.com/questions/51829200/how-to-set-up-airflow-send-email)
+
 ![airflow-cfg-overrides](/docs/images/airflow-cfg-overrides.png)
 
 ## Dag Run

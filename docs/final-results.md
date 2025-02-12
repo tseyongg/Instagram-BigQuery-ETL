@@ -46,8 +46,8 @@ For example, we can conduct analysis on recent comments linked to their parent p
 
 ```sql
 SELECT *
-FROM winged-yeti-440908-r9.instagram_analytics.posts p
-LEFT JOIN winged-yeti-440908-r9.instagram_analytics.comments c
+FROM `winged-yeti-440908-r9.instagram_analytics.posts` p
+LEFT JOIN `winged-yeti-440908-r9.instagram_analytics.comments` c
     ON p.post_id = c.postid
 ORDER BY p.post_timestamp DESC;
 ```
@@ -60,8 +60,8 @@ Or, we may want to conduct analysis on post insights:
 
 ```sql
 SELECT *
-FROM winged-yeti-440908-r9.instagram_analytics.posts p
-LEFT JOIN winged-yeti-440908-r9.instagram_analytics.insights i
+FROM `winged-yeti-440908-r9.instagram_analytics.posts` p
+LEFT JOIN `winged-yeti-440908-r9.instagram_analytics.insights` i
     ON p.post_id = i.post_id
 ORDER BY p.post_timestamp DESC;
 ```

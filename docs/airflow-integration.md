@@ -8,7 +8,7 @@ Then, proceed to upload your [DAG](/airflow/dags/airflow_job.py) into your envir
 
 ```bash
 gcloud composer environments storage dags import \
-    --environment ENVIRONMENT_NAME \
+    --environment instagram-collector-composer-3 \
     --location asia-southeast1 \
     --source="LOCAL_FILE_TO_UPLOAD"
 ```

@@ -63,7 +63,7 @@ You can also view the job logs under logs, which should look like so:
 ![cloud-run-job-logs](/docs/images/cloud-run-job-logs.png)
 
 
-Here, posts are first fetched, followed by comments, then insights. Once done, they are loaded in the same order.
+Here, as in the local job, posts are first fetched, followed by comments, then insights. Once done, they are loaded in the same order.
 
 ***
 

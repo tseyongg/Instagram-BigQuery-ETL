@@ -24,6 +24,10 @@ In our [DAG](/airflow/dags/airflow_job.py), our second task after running the jo
 
 ## Dag Run
 
+### Cloud Run Job task execution
+
+I would like to credit the `CloudRunExecuteJobOperator`, specially created for Google Cloud-Airflow workflows. I referred to their documentations [here](https://airflow.apache.org/docs/apache-airflow-providers-google/12.0.0/_api/airflow/providers/google/cloud/operators/cloud_run/index.html). <br><br>
+
 ### DAG uploading
 
 Now, proceed to upload your [DAG](/airflow/dags/airflow_job.py) into your environment's cloud storage bucket:

@@ -43,6 +43,7 @@ Detailed setup and workflow instructions are available in the docs folder:
 2. [Instagram API Workflow](docs/instagram-api-workflow.md)
 3. [Local Deployment & gcloud CLI](docs/local-deploy-gcloudcli.md)
 4. [Cloud Deployment](docs/cloud-deployment.md)
+5. [Airflow Integration](docs/airflow-integration.md)
 
 <!-- - [Cloud Composer Setup](docs/cloud-composer-setup.md)
 - [Environment Variables](docs/environment-variables.md)

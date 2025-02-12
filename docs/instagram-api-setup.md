@@ -61,3 +61,7 @@ Below is an example of the status of my own long-lived saccess token:
 
 ![access-token-info](/docs/images/access-token-info.png)
 
+
+***
+
+[Previous Step](/README.md) | [Next Step](/docs/instagram-api-workflow.md)

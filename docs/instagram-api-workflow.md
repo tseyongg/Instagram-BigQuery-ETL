@@ -76,3 +76,7 @@ As in the above `insights` table, I have added a visual column `applies to which
 ```
 
 > NOTE: the `IMAGE` and `CAROUSELL_ALBUM` media types do not suffer from these issues.
+
+***
+
+[Previous Step](/docs/instagram-api-setup.md) | [Next Step](/docs/local-deploy-gcloudcli.md)

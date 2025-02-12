@@ -65,7 +65,9 @@ You can also view the job logs under logs, which should look like so:
 
 Here, posts are first fetched, followed by comments, then insights. Once done, they are loaded in the same order.
 
+***
 
+[Previous Step](/docs/local-deploy-gcloudcli.md) | [Next Step](/docs/airflow-integration.md)
 
 
 

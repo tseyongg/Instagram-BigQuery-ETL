@@ -44,6 +44,7 @@ Detailed setup and workflow instructions are available in the docs folder:
 3. [Local Deployment & gcloud CLI](docs/local-deploy-gcloudcli.md)
 4. [Cloud Deployment](docs/cloud-deployment.md)
 5. [Airflow Integration](docs/airflow-integration.md)
+6. [Final Results](docs/final-results.md)
 
 <!-- - [Cloud Composer Setup](docs/cloud-composer-setup.md)
 - [Environment Variables](docs/environment-variables.md)
